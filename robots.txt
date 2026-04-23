@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://omeriinnocent.github.io/sitemap.xml
+Sitemap: https://www.omeri.dev/sitemap.xml
