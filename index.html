@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omeri Innocent | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>omeri<span class="logo-accent">innocent</span><span class="logo-bracket">/&gt;</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-avatar-wrap">
+          <img
+            src="https://avatars.githubusercontent.com/u/247633981?v=4"
+            alt="Omeri Innocent avatar"
+            class="hero-avatar"
+          />
+          <span class="status-dot" title="Active on GitHub"></span>
+        </div>
+        <div class="hero-text">
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-name">Omeri Innocent</h1>
+          <p class="hero-role">
+            <span class="typed" id="typedText"></span><span class="cursor">|</span>
+          </p>
+          <p class="hero-location">
+            <i class="fa-solid fa-location-dot"></i>&nbsp;Kampala, Uganda
+            &nbsp;&nbsp;
+            <i class="fa-solid fa-building"></i>&nbsp;omeriDesigns
+          </p>
+          <div class="hero-cta">
+            <a
+              href="https://github.com/omeriinnocent"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              <i class="fa-brands fa-github"></i> View GitHub
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll down</span>
+        <i class="fa-solid fa-chevron-down bounce"></i>
+      </div>
+    </section>
+
+    <!-- ABOUT / STATS -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-sub">A passionate developer contributing to open-source healthcare tech.</p>
+        <div class="about-grid">
+          <div class="about-card">
+            <i class="fa-solid fa-code about-icon"></i>
+            <h3>Frontend Developer</h3>
+            <p>
+              Building modern, accessible user interfaces with React, TypeScript,
+              and component-based architectures. Experienced with micro-frontends
+              and modular design patterns.
+            </p>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-hospital about-icon"></i>
+            <h3>Healthcare Tech</h3>
+            <p>
+              Actively contributing to OpenMRS O3 — an open-source EMR platform
+              used globally. Working on patient charts, billing, lab modules, and
+              form builders.
+            </p>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-layer-group about-icon"></i>
+            <h3>Full Stack Mindset</h3>
+            <p>
+              Comfortable across the stack — from React frontends and Node.js
+              APIs to Docker containerisation and CI/CD workflows.
+            </p>
+          </div>
+        </div>
+
+        <!-- GitHub Stats -->
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-num" id="statRepos">24</span>
+            <span class="stat-label">Public Repos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2025</span>
+            <span class="stat-label">Joined GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-sub">Technologies I work with day-to-day.</p>
+        <div class="skills-grid">
+          <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</div>
+          <div class="skill-pill"><i class="fa-brands fa-react"></i> React</div>
+          <div class="skill-pill ts-icon">TS TypeScript</div>
+          <div class="skill-pill"><i class="fa-brands fa-node-js"></i> Node.js</div>
+          <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</div>
+          <div class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+          <div class="skill-pill"><i class="fa-brands fa-docker"></i> Docker</div>
+          <div class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</div>
+          <div class="skill-pill"><i class="fa-brands fa-github"></i> GitHub</div>
+          <div class="skill-pill"><i class="fa-solid fa-terminal"></i> REST APIs</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">Recent repositories from my GitHub activity.</p>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Injected by JS -->
+          <div class="proj-skeleton"></div>
+          <div class="proj-skeleton"></div>
+          <div class="proj-skeleton"></div>
+          <div class="proj-skeleton"></div>
+          <div class="proj-skeleton"></div>
+          <div class="proj-skeleton"></div>
+        </div>
+        <div class="projects-footer">
+          <a
+            href="https://github.com/omeriinnocent?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+          >
+            <i class="fa-brands fa-github"></i> See All Repositories
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">
+          Open to collaborations, open-source contributions, and new
+          opportunities. Reach out via GitHub or drop me a message.
+        </p>
+        <div class="contact-links">
+          <a
+            href="https://github.com/omeriinnocent"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link"
+          >
+            <i class="fa-brands fa-github"></i>
+            <span>github.com/omeriinnocent</span>
+          </a>
+          <a
+            href="mailto:omeriinnocent@gmail.com"
+            class="contact-link"
+          >
+            <i class="fa-solid fa-envelope"></i>
+            <span>omeriinnocent08@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Omeri Innocent &mdash; Built with
+        HTML, CSS &amp; JavaScript &middot;
+        <a href="https://github.com/omeriinnocent" target="_blank" rel="noopener noreferrer">
+          @omeriinnocent
+        </a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
